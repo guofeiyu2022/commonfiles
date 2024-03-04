@@ -1,0 +1,47 @@
+Run Command: sudo nettrace --diag -p udp --addr 223.72.218.90 --detail
+
+
+***************** ffff9f2a18dcb600 ***************
+[553902.295501] [ffff9f2a18dcb600][ip_output           ][cpu:3  ][     ][pid:2273949][jetski      ][ns:4026532771] UDP: 10.224.0.157:9999 -> 223.72.218.90:5001
+[553902.295506] [ffff9f2a18dcb600][nf_hook_slow        ][cpu:3  ][eth0 ][pid:2273949][jetski      ][ns:4026532771] UDP: 10.224.0.157:9999 -> 223.72.218.90:5001 *ipv4 in chain: POST_ROUTING*
+[553902.295515] [ffff9f2a18dcb600][ip_finish_output    ][cpu:3  ][eth0 ][pid:2273949][jetski      ][ns:4026532771] UDP: 10.224.0.157:9999 -> 223.72.218.90:5001
+[553902.295520] [ffff9f2a18dcb600][ip_finish_output2   ][cpu:3  ][eth0 ][pid:2273949][jetski      ][ns:4026532771] UDP: 10.224.0.157:9999 -> 223.72.218.90:5001
+[553902.295525] [ffff9f2a18dcb600][__dev_queue_xmit    ][cpu:3  ][eth0 ][pid:2273949][jetski      ][ns:4026532771] UDP: 10.224.0.157:9999 -> 223.72.218.90:5001
+[553902.295531] [ffff9f2a18dcb600][dev_hard_start_xmit ][cpu:3  ][eth0 ][pid:2273949][jetski      ][ns:4026532771] UDP: 10.224.0.157:9999 -> 223.72.218.90:5001 *skb is successfully sent to the NIC driver*
+[553902.295537] [ffff9f2a18dcb600][enqueue_to_backlog  ][cpu:3  ][azv79d8354dd0d][pid:2273949][jetski      ][ns:4026531840] UDP: 10.224.0.157:9999 -> 223.72.218.90:5001
+[553902.295555] [ffff9f2a18dcb600][__netif_receive_skb_core.constprop.0][cpu:3  ][azv79d8354dd0d][pid:2273949][jetski      ][ns:4026531840] UDP: 10.224.0.157:9999 -> 223.72.218.90:5001
+[553902.295565] [ffff9f2a18dcb600][ip_rcv              ][cpu:3  ][azv79d8354dd0d][pid:2273949][jetski      ][ns:4026531840] UDP: 10.224.0.157:9999 -> 223.72.218.90:5001
+[553902.295570] [ffff9f2a18dcb600][ip_rcv_core         ][cpu:3  ][azv79d8354dd0d][pid:2273949][jetski      ][ns:4026531840] UDP: 10.224.0.157:9999 -> 223.72.218.90:5001
+[553902.295583] [ffff9f2a18dcb600][nf_hook_slow        ][cpu:3  ][azv79d8354dd0d][pid:2273949][jetski      ][ns:4026531840] UDP: 10.224.0.157:9999 -> 223.72.218.90:5001 *ipv4 in chain: PRE_ROUTING*
+[553902.295588] [ffff9f2a18dcb600][nft_do_chain        ][cpu:3  ][azv79d8354dd0d][pid:2273949][jetski      ][ns:4026531840] UDP: 10.224.0.157:9999 -> 223.72.218.90:5001 *iptables table:raw, chain:PREROUT* *packet is accepted*
+[553902.295600] [ffff9f2a18dcb600][nft_do_chain        ][cpu:3  ][azv79d8354dd0d][pid:2273949][jetski      ][ns:4026531840] UDP: 10.224.0.157:9999 -> 223.72.218.90:5001 *iptables table:mangle, chain:PREROUT* *packet is accepted*
+[553902.295610] [ffff9f2a18dcb600][nft_do_chain        ][cpu:3  ][azv79d8354dd0d][pid:2273949][jetski      ][ns:4026531840] UDP: 10.224.0.157:9999 -> 223.72.218.90:5001 *iptables table:nat, chain:PREROUT* *packet is accepted*
+[553902.295626] [ffff9f2a18dcb600][ip_route_input_slow ][cpu:3  ][azv79d8354dd0d][pid:2273949][jetski      ][ns:4026531840] UDP: 10.224.0.157:9999 -> 223.72.218.90:5001
+[553902.295631] [ffff9f2a18dcb600][fib_validate_source ][cpu:3  ][azv79d8354dd0d][pid:2273949][jetski      ][ns:4026531840] UDP: 10.224.0.157:9999 -> 223.72.218.90:5001
+[553902.295645] [ffff9f2a18dcb600][ip_forward          ][cpu:3  ][azv79d8354dd0d][pid:2273949][jetski      ][ns:4026531840] UDP: 10.224.0.157:9999 -> 223.72.218.90:5001
+[553902.295651] [ffff9f2a18dcb600][nf_hook_slow        ][cpu:3  ][azv79d8354dd0d][pid:2273949][jetski      ][ns:4026531840] UDP: 10.224.0.157:9999 -> 223.72.218.90:5001 *ipv4 in chain: FORWARD*
+[553902.295656] [ffff9f2a18dcb600][nft_do_chain        ][cpu:3  ][azv79d8354dd0d][pid:2273949][jetski      ][ns:4026531840] UDP: 10.224.0.157:9999 -> 223.72.218.90:5001 *iptables table:mangle, chain:FORWARD* *packet is accepted*
+[553902.295665] [ffff9f2a18dcb600][nft_do_chain        ][cpu:3  ][azv79d8354dd0d][pid:2273949][jetski      ][ns:4026531840] UDP: 10.224.0.157:9999 -> 223.72.218.90:5001 *iptables table:filter, chain:FORWARD* *packet is accepted*
+[553902.295683] [ffff9f2a18dcb600][ip_output           ][cpu:3  ][azv79d8354dd0d][pid:2273949][jetski      ][ns:4026531840] UDP: 10.224.0.157:9999 -> 223.72.218.90:5001
+[553902.295688] [ffff9f2a18dcb600][nf_hook_slow        ][cpu:3  ][eth0 ][pid:2273949][jetski      ][ns:4026531840] UDP: 10.224.0.157:9999 -> 223.72.218.90:5001 *ipv4 in chain: POST_ROUTING* *packet is dropped by netfilter (NF_DROP)*
+[553902.295693] [ffff9f2a18dcb600][nft_do_chain        ][cpu:3  ][eth0 ][pid:2273949][jetski      ][ns:4026531840] UDP: 10.224.0.157:9999 -> 223.72.218.90:5001 *iptables table:mangle, chain:POSTROU* *packet is accepted*
+[553902.295703] [ffff9f2a18dcb600][nft_do_chain        ][cpu:3  ][eth0 ][pid:2273949][jetski      ][ns:4026531840] UDP: 10.224.0.157:9999 -> 223.72.218.90:5001 *iptables table:nat, chain:POSTROU* *packet is accepted*
+[553902.295714] [ffff9f2a18dcb600][nf_nat_manip_pkt    ][cpu:3  ][eth0 ][pid:2273949][jetski      ][ns:4026531840] UDP: 10.224.0.157:9999 -> 223.72.218.90:5001 *NAT happens (packet address will change)*
+[553902.295724] [ffff9f2a18dcb600][kfree_skb           ][cpu:3  ][eth0 ][pid:2273949][jetski      ][ns:4026531840] UDP: 20.225.34.72:9999 -> 223.72.218.90:5001 *packet is dropped by kernel*
+---------------- ANALYSIS RESULT ---------------------
+[1] ERROR happens in nf_hook_slow(netfilter):
+        packet is dropped by netfilter (NF_DROP)
+    fix advice:
+        check your netfilter rule
+
+[2] WARNING happens in nf_nat_manip_pkt(netfilter):
+        NAT happens (packet address will change)
+
+[3] ERROR happens in kfree_skb(life):
+        packet is dropped by kernel
+    location:
+        nf_hook_slow+0xa0
+    drop reason:
+        NETFILTER_DROP
+
+analysis finished!
